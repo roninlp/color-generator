@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Color Generator</title>
+  </head>
+  <body>
+    <main class="container">
+      <div id="get-color">
+        <input type="color" name="choose-color" id="color-input" value="#f55a5a" />
+        <div class="dropdown">
+          <div class="select">
+            <span id="selected" class="selected">Monochrome</span>
+            <div class="caret"></div>
+          </div>
+          <ul class="menu">
+            <li class="active">Monochrome</li>
+            <li>Monochrome-dark</li>
+            <li>Monochrome-light</li>
+            <li>Analogic</li>
+            <li>Complement</li>
+            <li>Analogic-complement</li>
+            <li>Triad</li>
+            <li>Quad</li>
+          </ul>
+        </div>
+        <button id="submit-color">Get color scheme</button>
+      </div>
+      <div id="color-container"></div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
